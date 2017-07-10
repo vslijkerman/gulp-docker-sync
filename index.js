@@ -4,7 +4,7 @@ var through = require('through2');
 var plur = require('plur');
 var exec = require('child_process').exec;
 
-function cp(container, localPath, containerPath, callback) {
+function copy(container, localPath, containerPath, callback) {
   if (process.argv.indexOf('--verbose') !== -1) {
     gutil.log('gulp-docker-sync:', 'copy [' + localPath + '] to [' + container + ':' + containerPath + ']');
   }
@@ -65,5 +65,5 @@ function dest(options) {
   return stream;
 }
 
-module.exports = cp;
+module.exports = copy;
 module.exports = dest;

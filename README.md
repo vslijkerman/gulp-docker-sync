@@ -3,9 +3,10 @@
 Sync files with a Docker container.
 
 ## Install
+Add the following line to the package.json file in your project:
 
 ```
-$ npm install --save-dev gulp-docker-sync
+"gulp-docker-sync": "git+https://github.com/vslijkerman/gulp-docker-sync.git",
 ```
 
 
